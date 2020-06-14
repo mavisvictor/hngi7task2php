@@ -125,7 +125,7 @@
                 <label for=""></label>
                 <input type="number" name="user_height" class="form-control" placeholder="Input Required height in pixels" required>
               </div>
-              <input type="submit" class="btn btn-success" name="form_submit">
+              <input type="submit" class="btn btn-success" name="submit">
             </div>
 
 
@@ -133,7 +133,7 @@
 
 
             <?php
-            if (isset($_POST['form_submit'])) {
+            if (isset($_POST['submit'])) {
               $directoryName = 'resized_images';
               $width = $_POST['user_width'];
               $height = $_POST['user_height'];
